@@ -54,7 +54,7 @@ function loginUser(userData) {
                 if (userResponse.status == 200) {
                   userResponse.json().then((userDataJson) => {
                     localStorage.setItem("userId", userDataJson._id);
-                    location.href = "./Home_Page.html";
+                    location.href = "./index.html";
                   });
                 }
               })
