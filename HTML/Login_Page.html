@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+  <!-- <title>Login & Signup Form | CodingNepal</title> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../Assets/IMG/logo transarent.png">
+  <title>Login/SignUp</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../Assets/CSS/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="../Assets/CSS/login.css" rel="stylesheet">
+</head>
+
+<body class="image_1">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="Home_Page.html"><img src="../Assets/IMG/logo transarent.png" width="220"
+          height="55"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="Home_Page.html">Home </a>
+          </li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="About_Us_Page.html">About Us</a>
+          </li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact_Us_Page.html">Contact Us</a>
+          </li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQs_Page.html">FAQs </a>
+          </li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Login_Page.html">Login/SignUp <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active"><a class="nav-link">&nbsp;</a></li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+
+
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">
+        Login</div>
+      <div class="title signup">
+        SignUp </div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">SignUp</label>
+        <div class="slider-tab">
+        </div>
+      </div>
+      <div class="form-inner">
+        <form class="login" name="userForm">
+          <div class="field">
+            <input type="text" placeholder="Email/Username" name="email" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" name="password" required>
+          </div><br>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="field btn1">
+            <div class="btn-layer">
+            </div>
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">
+            Not a member? <a href="">SignUp now</a></div>
+        </form>
+        <form action="Registration_Page.html" s class="signup" method="get">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+          <div class="field btn1">
+            <div class="btn-layer">
+            </div>
+            <input type="submit" value="SignUp">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+  </script>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="../Assets/JS/popper.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../Assets/JS/holder.min.js"></script>
+  <script src="../Assets/JS/login.js"></script>
+</body>
+
+</html>

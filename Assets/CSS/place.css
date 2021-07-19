@@ -1,0 +1,159 @@
+.image_1{
+	background-size: 100% 800px;
+	background: rgb(247,247,247);
+	background: radial-gradient(circle, rgba(247,247,247,1) 0%, rgba(235,254,255,1) 100%);
+}
+.city-heading{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+	color: #000000;
+	font-family: devonshire;
+}
+.place{
+	padding-top: 10px;
+	padding-left: 100px;
+}
+.sub-place1_1{
+	padding-top: 0px;
+	padding-left: 345px;
+	color: #000000;
+}
+.sub-place1_2{
+	padding-top: 0px;
+	padding-right: 50px;
+	padding-left: 30px;
+	color: #000000;
+}
+.sub-place2{
+	padding-top: 0px;
+	padding-left: 35px;
+	color: #000000;
+}
+.sub-place3_1{
+	padding-top: 0px;
+	padding-left: 35px;
+	padding-right: 30px;
+	color: #000000;
+}
+.sub-place3_2{
+	padding-top: 0px;
+	padding-right: 50px;
+	color: #000000;
+}
+.place-text{
+	color: #000000;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	text-align: center;
+	line-height: 22px;
+}
+.place-list{
+	overflow: hidden;
+}
+.place-list-content{
+	display: inline-block;
+}
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  opacity: 100%;
+  
+  
+}
+.container:hover{
+	border: double;
+	border-color: white;
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sub-container1 {
+  border: 2px solid #ccc;
+  background-color: #00B4C3;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0px;
+  opacity: 65%;
+  width: 300px;
+  height: 50px;
+  border-color: black;
+  line-height: 15px;
+}
+.sub-container1:hover{
+	border: double;
+	border-color: white;
+	cursor: pointer;
+}
+
+/* Clear floats after containers */
+.sub-container1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sub-container2 {
+  border: 2px solid #ccc;
+  background-color: #BFDF31;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  opacity: 65%;
+  width: 1035px;
+  line-height: 20px;
+  border-color: black;
+}
+.sub-container2:hover{
+	border: double;
+	border-color: white;
+}
+
+/* Clear floats after containers */
+.sub-container2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.place-image1 {
+  float: left;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+.place-image2 {
+  float: right;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .place-image1 {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+  .place-image2 {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}

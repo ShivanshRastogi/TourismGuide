@@ -1,0 +1,15 @@
+.image_1{
+	background: url("../IMG/lighting.jpg");
+	background-size: 100% 100%;
+}
+.about-us-image{
+	text-align: center;
+	padding-top: 0px;
+}
+.about-us-text{
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right: 40px;
+	font-size: 17px;
+	color: #FFFFFF;
+}

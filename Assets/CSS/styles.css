@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider  img { width: 1348px; float: left; }
+div#slider  { 
+  position: relative;
+  width: 500%;
+  margin: -2;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+}
+@charset "utf-8";
+/* CSS Document */
+.top-header{
+	margin-top: 10px;
+	text-decoration: underline;
+	font-family:'LEMON MILK Medium';
+	font-size: 40px;
+	color: aliceblue
+}
+body{
+	background: rgb(255,255,255);
+    	
+}
+.top-header-placement{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 1rem auto;
+}
+.btn{
+	position: relative;
+	border: hidden;
+	outline: none;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	background: none;
+	font-family: 'LEMON MILK Light';
+	font-size: 20px;
+	text-decoration: none;
+	transition: color 0.2s;
+	transition-timing-function: ease-in-out;
+}
+.btn::before{
+	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+  	background-color: #FFFFFF;
+  	visibility: hidden;
+  	transform: scaleX(0);
+  	transition: all 0.3s ease-in-out 0s;
+}
+.btn:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.btn:hover{
+	color: #ffffff;
+}
+.btn:active{
+	border: hidden;
+}
+.login_box
+{
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 220px;
+  	width: 27%;
+ 	padding: 30px;
+	display: block;
+    text-align: center;
+}
+.loginform_design
+{
+	padding-top: 26px;
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+label{
+	font-family: 'LEMON MILK Light';
+}
+input
+{
+	font-family: eurofurence;
+	border: none;
+	border-radius: 4px;
+	padding: 4px;
+}
+.btn_design
+{
+	font-family: eurofurence;
+	background-image: linear-gradient(35deg, #ffd1e8, #cbb7ff);
+	border: none;
+	font-size: 23px;
+	padding: 5px 12px;
+	border-radius: 3px;
+}
+.btn_click:active
+{
+	color: white;
+	background-image: linear-gradient(35deg, #404040, #565656);
+}
+.cities{
+	text-align: center;
+	margin-top: -10px;
+}
