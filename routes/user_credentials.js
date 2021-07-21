@@ -17,16 +17,33 @@ router
   .route("/")
   .get((req, res) => {
     //Get All Credentials
-    UserCredentials.find()
-      .exec()
-      .then((result) => {
-        console.log(result);
-        res.status(200).json(result);
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-      });
+    const auth = { login: "shivanshrastogi", password: "harshballav" }; // change this
+
+    // parse login and password from headers
+    const b64auth = (req.headers.authorization || "").split(" ")[1] || "";
+    const [login, password] = Buffer.from(b64auth, "base64")
+      .toString()
+      .split(":");
+
+    if (
+      login &&
+      password &&
+      login === auth.login &&
+      password === auth.password
+    ) {
+      UserCredentials.find()
+        .exec()
+        .then((result) => {
+          console.log(result);
+          res.status(200).json(result);
+        })
+        .catch((err) => {
+          console.log(err);
+          res.status(500).json(err);
+        });
+    } else {
+      res.status(401).json({ msg: "User Unauthorized" });
+    }
   })
   .post((req, res) => {
     console.log(req.body);
